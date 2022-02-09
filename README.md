@@ -1,13 +1,18 @@
 # DiskPart
 Partitions manager, clean disk, format
 
-#### CONVERT GPT || MBR
+#### FORMAT
 --------------------------------------------------------
 - diskpart
 - list disk
 - select disk 1
 - clean
-- convert gpt || convert mbr 
+- create partition primary
+- select partition 1
+- active
+- format fs=ntfs quick
+- assign
+- exit
 --------------------------------------------------------
 
 #### FORMAT
@@ -19,6 +24,15 @@ Partitions manager, clean disk, format
 - create partition primary
 - format fs=fat || format fs=ntfs
 - assign || assign letter=f
+--------------------------------------------------------
+
+#### CONVERT GPT || MBR
+--------------------------------------------------------
+- diskpart
+- list disk
+- select disk 1
+- clean
+- convert gpt || convert mbr 
 --------------------------------------------------------
 
 #### CREATE PARTITION
@@ -37,17 +51,17 @@ Partitions manager, clean disk, format
 
 #### DELETE PARTITION
 --------------------------------------------------------
-select partition 1
-delete partition override
+- select partition 1
+- delete partition override
 --------------------------------------------------------
 
 #### ON || OFF
 --------------------------------------------------------
-offline disk
-online disk
+- offline disk
+- online disk
 --------------------------------------------------------
 
 #### MORE INFORMATION
 --------------------------------------------------------
-help
+- help
 --------------------------------------------------------
