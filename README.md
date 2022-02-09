@@ -13,7 +13,6 @@ Partitions manager, clean disk, format
 - format fs=ntfs quick
 - assign
 - exit
---------------------------------------------------------
 
 #### FORMAT
 --------------------------------------------------------
@@ -24,7 +23,6 @@ Partitions manager, clean disk, format
 - create partition primary
 - format fs=fat || format fs=ntfs
 - assign || assign letter=f
---------------------------------------------------------
 
 #### CONVERT GPT || MBR
 --------------------------------------------------------
@@ -33,7 +31,6 @@ Partitions manager, clean disk, format
 - select disk 1
 - clean
 - convert gpt || convert mbr 
---------------------------------------------------------
 
 #### CREATE PARTITION
 --------------------------------------------------------
@@ -47,21 +44,17 @@ Partitions manager, clean disk, format
 - select partition 1
 - create partition logical
 - format fs=ntfs || format fs=ntfs quick label=”Tutorial”
---------------------------------------------------------
 
 #### DELETE PARTITION
 --------------------------------------------------------
 - select partition 1
 - delete partition override
---------------------------------------------------------
 
 #### ON || OFF
 --------------------------------------------------------
 - offline disk
 - online disk
---------------------------------------------------------
 
 #### MORE INFORMATION
 --------------------------------------------------------
 - help
---------------------------------------------------------
