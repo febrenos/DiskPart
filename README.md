@@ -1,4 +1,4 @@
-# DiskPart
+# DiskPart cmd
 Partitions manager, clean disk, format
 
 #### FORMAT
